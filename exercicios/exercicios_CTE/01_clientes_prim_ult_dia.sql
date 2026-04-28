@@ -28,4 +28,4 @@ SELECT
     COUNT(primCliente),
     COUNT(UltCliente),
     1. * COUNT(ultCliente) / COUNT(primCliente)
-FROM Tb_Join
+FROM Tb_Join;
