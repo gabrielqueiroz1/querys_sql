@@ -31,13 +31,10 @@
 --    idCliente,
 --    COUNT(idCliente) OVER(PARTITION BY idCliente) AS QTD
 --FROM clientes
---GROUP BY IdCliente
-
+--GROUP BY IdCliente~
 
 SELECT
-    DISTINCT(IdCliente),
-    SUBSTR(DtCriacao, 1, 10)
+    *,
+    SUBSTR(DtCriacao, 1, 10) AS Dia
 FROM transacoes
-WHERE SUBSTR(DtCriacao, 1, 10) >= '2025-08-25'
-AND SUBSTR(DtCriacao, 1, 10) < '2025-08-30'
-ORDER BY 1
+WHERE SUBSTR(DtCriacao, 1, 10) = '2024-01-27'
