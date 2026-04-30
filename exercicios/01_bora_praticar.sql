@@ -33,8 +33,13 @@
 --FROM clientes
 --GROUP BY IdCliente~
 
+--SELECT
+--    *,
+--    SUBSTR(DtCriacao, 1, 10) AS Dia
+--FROM transacoes
+--WHERE SUBSTR(DtCriacao, 1, 10) = '2024-01-27';
+
 SELECT
-    *,
-    SUBSTR(DtCriacao, 1, 10) AS Dia
-FROM transacoes
-WHERE SUBSTR(DtCriacao, 1, 10) = '2024-01-27'
+    *
+FROM tb_feature_store_cliente
+ORDER BY 2, 1
