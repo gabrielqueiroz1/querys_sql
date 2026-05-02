@@ -42,4 +42,4 @@
 SELECT
     *
 FROM tb_feature_store_cliente
-ORDER BY 2, 1
+ORDER BY 2, 1;
